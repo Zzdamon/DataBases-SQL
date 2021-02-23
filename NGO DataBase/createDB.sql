@@ -151,3 +151,34 @@ to_date('08-03-2012','DD-MM-RRRR'),32,30, 2, 2000 );
 
 INSERT INTO HUMAN_RESOURCES (EMPLOYEE_ID,FIRST_NAME, LAST_NAME, EMAIL, PHONE_NUMBER, HIRE_DATE, POSITION_ID, DEPARTMENT_ID, PROJECT_ID, SALARY) VALUES (3,'Damon', 'Lepirda','damon@accept.ro','0731289735',
 to_date('28-11-2019','DD-MM-RRRR'),33,30, 1, 1600 );
+
+																		      INSERT INTO HUMAN_RESOURCES (EMPLOYEE_ID,FIRST_NAME, LAST_NAME, EMAIL, PHONE_NUMBER, HIRE_DATE, POSITION_ID, DEPARTMENT_ID, COORDINATOR_ID) VALUES (4,'Dude', 'Duddery','dude@gmail.ro','0734544735',
+to_date('28-11-2020','DD-MM-RRRR'),11,10, 5 );
+
+INSERT INTO HUMAN_RESOURCES (EMPLOYEE_ID,FIRST_NAME, LAST_NAME, EMAIL, PHONE_NUMBER, HIRE_DATE, POSITION_ID, DEPARTMENT_ID, COORDINATOR_ID) VALUES (5,'Dudette', 'Duddettery','dudette@gmail.ro','073567635',
+to_date('28-11-2020','DD-MM-RRRR'),12,10, 1 );
+
+INSERT INTO HUMAN_RESOURCES (EMPLOYEE_ID,FIRST_NAME, LAST_NAME, EMAIL, PHONE_NUMBER, HIRE_DATE, POSITION_ID, DEPARTMENT_ID, PROJECT_ID, SALARY) VALUES (6,'Patrick', 'Braila','patrick@accept.ro','0721231234',
+to_date('22-08-2018','DD-MM-RRRR'),32,30, 1, 2000 );
+
+--PARTNERS---------------------------------------------------------------------------------------------------------
+
+INSERT INTO PARTNERS (PARTNER_ID,PARTNER_NAME,partner_phone_number,partner_email) VALUES (1,'Google','032134562','google@gmail.com');
+INSERT INTO PARTNERS (PARTNER_ID,PARTNER_NAME,partner_phone_number,partner_email) VALUES (2,'Mozaiq','032666476','mozaiq@gmail.com');
+INSERT INTO PARTNERS (PARTNER_ID,PARTNER_NAME,partner_phone_number,partner_email) VALUES (3,'Microsoft','035234642','microsoft@gmail.com');
+
+
+
+--FUNDS---------------------------------------------------------------------------------------------------------------
+
+INSERT INTO FUNDS (PARTNER_ID,allocated_funds,project_id) VALUES (1,200,1);
+INSERT INTO FUNDS (PARTNER_ID,allocated_funds,project_id) VALUES (2,300,1);
+
+--POSITION_HISTORY---------------------------------------------------------------------------------------------
+
+INSERT INTO POSITION_HISTORY(employee_id, START_DATE,END_DATE,POSITION_ID)VALUES(4, to_date('28-11-2019','DD-MM-RRRR'),to_date('28-11-2020','DD-MM-RRRR'),12 );
+INSERT INTO POSITION_HISTORY(employee_id, START_DATE,END_DATE,POSITION_ID)VALUES(6, to_date('20-10-2018','DD-MM-RRRR'),to_date('28-11-2019','DD-MM-RRRR'),33 );
+INSERT INTO POSITION_HISTORY(employee_id, START_DATE,END_DATE,POSITION_ID)VALUES(3, to_date('20-10-2017','DD-MM-RRRR'),to_date('28-11-2018','DD-MM-RRRR'),33 );
+INSERT INTO POSITION_HISTORY(employee_id, START_DATE,END_DATE,POSITION_ID)VALUES(4, to_date('20-10-2018','DD-MM-RRRR'),to_date('28-11-2019','DD-MM-RRRR'),11 );
+
+																		      
